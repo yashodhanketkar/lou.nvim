@@ -6,8 +6,8 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  config = function()
-    vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
-    vim.keymap.set('n', '<leader>bf', ':Neotree buffers reveal float<CR>', {})
-  end
+  keys = {
+    { "<C-n>", ":Neotree filesystem reveal left<cr>", desc = "Open Neotree on right side" },
+    { "<leader>bf", ":Neotree buffers reveal float<cr>", desc = "Shows Neotree buffers" },
+  },
 }

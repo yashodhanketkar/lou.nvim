@@ -1,6 +1,9 @@
 return {
   "Mofiqul/dracula.nvim",
-  opts = {
-    transparent = true,
-  },
+  config = function()
+    require("dracula").setup({
+      transparent_bg = false,
+      italic_comment = true,
+    })
+  end
 }
