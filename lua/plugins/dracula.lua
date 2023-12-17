@@ -5,5 +5,6 @@ return {
       transparent_bg = false,
       italic_comment = true,
     })
+    vim.cmd.colorscheme "dracula"
   end
 }
